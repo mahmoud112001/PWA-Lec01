@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- page two -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page Two — FullStackMearn">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>Page Two — FullStackMearn</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="Mahmoud.png" type="image/png">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">Mearn</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page1.html">Page 1</a></li>
+    <li><a href="page2.html" aria-current="page">Page 2</a></li>
+  </ul>
+</nav>
+
+<main class="page-wrapper">
+  <header class="content-header">
+    <span class="tag">Section 02</span>
+    <h1>Page Two</h1>
+    <p class="text-muted" style="font-style:italic; margin-top:0.5rem;">Your second demo section. Add content, components, or features here.</p>
+  </header>
+
+  <div class="content-body">
+    <div class="feature-row">
+      <span class="feature-row__icon">📦</span>
+      <div class="feature-row__body">
+        <h3>Cached on demand</h3>
+        <p>Pages not pre-cached are fetched from the network and stored automatically for next time.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <span class="feature-row__icon">🔌</span>
+      <div class="feature-row__body">
+        <h3>Works offline</h3>
+        <p>Once visited, this page loads even without internet — thanks to the service worker.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <span class="feature-row__icon">⚡</span>
+      <div class="feature-row__body">
+        <h3>Versioned cache</h3>
+        <p>Bump <code>CACHE_VERSION</code> in <code>sw.js</code> to wipe old caches and push a fresh build.</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="back-link" href="index.html">Back to home</a>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> FullStackMearn
+</footer>
+
+<script src="page2.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
