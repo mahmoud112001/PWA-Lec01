@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- home page -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FullStackMearn PWA">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>FullStackMearn</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="Mahmoud.png" type="image/png">
+  <link rel="apple-touch-icon" href="Mahmoud.png">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">Mearn</a>
+  <ul class="nav-links">
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="page1.html">Page 1</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+  </ul>
+</nav>
+
+<main class="page-wrapper">
+  <section class="hero">
+    <img class="hero__icon" src="Mahmoud.png" alt="FullStackMearn logo" width="100" height="100">
+    <p class="hero__eyebrow">Progressive Web App</p>
+    <h1 class="hero__title">FullStack Mearn</h1>
+    <p class="hero__subtitle">A modern PWA boilerplate — offline-ready, installable, and fast.</p>
+    <button id="installBtn" aria-label="Install this app">⬇ Install App</button>
+    <span class="pwa-badge">Service worker active</span>
+  </section>
+
+  <hr class="divider">
+
+  <nav class="page-grid" aria-label="Page navigation">
+    <a class="page-card" href="page1.html">
+      <p class="page-card__label">Section 01</p>
+      <p class="page-card__title">Page One</p>
+      <p class="page-card__desc">Explore the first demo page and its content.</p>
+    </a>
+    <a class="page-card" href="page2.html">
+      <p class="page-card__label">Section 02</p>
+      <p class="page-card__title">Page Two</p>
+      <p class="page-card__desc">Explore the second demo page and its content.</p>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> FullStackMearn &mdash; Built as a PWA
+</footer>
+
+<script src="app.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
