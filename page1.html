@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- page one -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page One — FullStackMearn">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>Page One — FullStackMearn</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="Mahmoud.png" type="image/png">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">Mearn</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page1.html" aria-current="page">Page 1</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+  </ul>
+</nav>
+
+<main class="page-wrapper">
+  <header class="content-header">
+    <span class="tag">Section 01</span>
+    <h1>Page One</h1>
+    <p class="text-muted" style="font-style:italic; margin-top:0.5rem;">Your first demo section. Add content, components, or features here.</p>
+  </header>
+
+  <div class="content-body">
+    <div class="info-block">
+      <h3>What goes here?</h3>
+      <p>Replace this block with your own content — a feature, a form, a data table, anything.</p>
+    </div>
+    <div class="info-block">
+      <h3>Offline ready</h3>
+      <p>This page is pre-cached by the service worker and loads instantly even without a network.</p>
+    </div>
+    <div class="info-block">
+      <h3>Shared styles</h3>
+      <p>All pages inherit from <code>base.css</code> and add their own stylesheet on top.</p>
+    </div>
+  </div>
+
+  <a class="back-link" href="index.html">Back to home</a>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> FullStackMearn
+</footer>
+
+<script src="page1.js" defer></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
