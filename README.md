@@ -95,6 +95,7 @@ FullStackMearn/
 - `.back-link` — Returns user to home
 - Loads: `base.css`, `page1.css`, `page1.js`
 
+
 ---
 
 ### 📄 `page2.html` — Section 02
